@@ -1,0 +1,17 @@
+shared/dist/
+shared/node_modules/
+private.key
+public.key
+*.env
+.env.*
+dist/
+
+services/*/node_modules/
+node_modules/
+
+*.logs
+npm-debug.log*
+
+.DS_Store
+Thumbs.db
+
