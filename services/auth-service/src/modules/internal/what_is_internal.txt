@@ -1,0 +1,10 @@
+When Match Engine needs to check "does this user exist and are they a SCORER?", 
+it can't query the auth database directly (different service, different DB). 
+So it asks Auth Service via HTTP. 
+
+But that endpoint should not be reachable by the public internet — only other services should call it.
+
+
+That's all `internal` is. It's just a route that says:
+GET /internal/users/:id
+
